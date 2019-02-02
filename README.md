@@ -9,5 +9,5 @@ encript(msg, publicKey);<br>
 encriptWithPadding(pad(msg), publicKey);<br>
 decript(encMsg);<br>
 decriptWithPadding(msg) ~~ decript(dePad(msg))<br>
-Sign(msg) ~~ decript(hash(msg)) <br>
-Ver(msg, signature, publickey) ~~ return (hash(msg) == encript(signature,publicKey))<br>
+sign(msg) ~~ decript(hash(msg)) <br>
+verify(msg, signature, publickey) ~~ return (hash(msg) == encript(signature,publicKey))<br>
